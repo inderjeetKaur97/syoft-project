@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/homePhone.css" />
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer src="/js/home.js"></script>
+</head>
+<body>
+  <main>
+    <img src="/img/logo.png" alt="logo-IG-ChatForm" class="logo" />
+    <h2>Welcome to IG-ChatForm</h2>
+    <div class="container">
+      <form action="chat" class="form-container" name="form-container">
+        <div class="form-input">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Enter your name" required />
+        </div>
+        <div class="form-input">
+          <label for="room">Room</label>
+          <select name="roomname" id="room-select"  required>
+            <option value="" disabled selected >Choose Room</option>
+            <option value="room-1">Room 1</option>
+            <option value="room-2">Room 2</option>
+            <option value="room-3">Room 3</option>
+            <option value="room-4">Room 4</option>
+            <option value="room-5">Room 5</option>
+            <option value="room-6">Room 6</option>
+          </select>
+        </div>
+        <button class="btn-joinRoom" type="submit">Join Room</button>
+      </form>
+      <div class="side-img-container">
+        <img src="/img/chatting-img.png" alt="chatting-img" />
+        <div class="side-img-text-cont">
+          <span class="side-img-text"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
